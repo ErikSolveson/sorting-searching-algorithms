@@ -1,0 +1,16 @@
+def insertionSort(dataset):
+  for index in range(1,len(dataset)):
+      currentvalue = dataset[index]
+      position = index
+
+      while position>0 and dataset[position - 1]>currentvalue:
+          dataset[position]=dataset[position-1]
+          position = position-1
+
+      dataset[position]=currentvalue
+
+dataset = [12,45,64,23,65,34,76,32,65,34,56,87]
+print(dataset)
+insertionSort(dataset)
+print(dataset)
+#print("hello")
